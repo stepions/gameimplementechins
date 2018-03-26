@@ -3,10 +3,10 @@ var app = express();
 var mysql = require('mysql');
 
 var connection = mysql.createConnection({
-    host:'cgmgameserver.cl9n0qwnzmby.ap-south-1.rds.amazonaws.com', 
-    user:'admin', 
+    host:'arn:aws:rds:us-east-2:079453352942:db:gamedb2', 
+    user:'root', 
     password:'*********',
-    database:'cgmgameserver'
+    database:'GameDb'
 });
 
 connection.connect(function (err) { //async
